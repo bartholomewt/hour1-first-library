@@ -10,9 +10,9 @@ float cm_to_in(void)
 float m_to_ft(void)
 {
     float meters = get_float("Meters: ");
-    float feet = meters*3.28084;
-    printf("\nFeet:%f\n", feet);
-    return in;
+    float ft = meters*3.28084;
+    printf("\n%.2f\n", ft);
+    return ft;
 }
 float cm_to_mi(void)
 {
