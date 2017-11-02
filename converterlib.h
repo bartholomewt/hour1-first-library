@@ -6,6 +6,7 @@ float cm_to_in(void)
     return in;
 }
 
+
 float in_to_cm(void)
 {
     float in = get_float("Number of inches:");
@@ -13,3 +14,14 @@ float in_to_cm(void)
     printf("\nThe number of centimeters is %.2f\n",cm);
     return cm;
 }
+
+
+int km_to_in(void)
+{
+    int km = get_int("Kilo: ")
+    int in = Kilo * 39370;
+    printf("Inches is %.2i\n", in);
+    return in;
+}
+
+
