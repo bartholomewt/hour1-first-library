@@ -1,3 +1,4 @@
+//cm to in
 float cm_to_in(void)
 {
     float cm = get_float("Number of centimeters:");
@@ -6,7 +7,7 @@ float cm_to_in(void)
     return in;
 }
 
-
+//in to cm
 float in_to_cm(void)
 {
     float in = get_float("Number of inches:");
@@ -15,13 +16,40 @@ float in_to_cm(void)
     return cm;
 }
 
-
-int km_to_in(void)
+//ft to cm
+float ft_to_cm(void)
 {
-    int km = get_int("Kilo: ")
-    int in = Kilo * 39370;
-    printf("Inches is %.2i\n", in);
-    return in;
+    float ft = get_float("Number of feet: ");
+    float cm = ft * 30.48;
+    printf("\nThe number of centimeters is %.2f\n", cm);
+    return cm;
 }
 
+//km to ft
+float km_to_ft (void)
+{
+    float km = get_float("Number of Kilometers: ")
+    float ft = km * 3280.8;
+    printf("\nThe number of inches is %.3f\n", ft);
+    return ft;
+}
+
+//m to ft
+float m_to_ft(void)
+{
+    float meters = get_float("Meters: ");
+    float feet = meters*3.28084;
+    printf("\nFeet:%f\n", feet);
+    return in;
+
+}
+
+//cm to mi
+float cm_to_mi(void)
+{
+    float cm = get_float("Number of centimeters:");
+    float mi = cm / 160934.4;
+    printf("\nThe number of miles is %.2f\n", mi);
+    return mi;
+}
 
